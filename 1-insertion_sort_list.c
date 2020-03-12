@@ -12,16 +12,17 @@ void insertion_sort_list(listint_t **list)
 	listint_t *index;
 
 	if (list == NULL || *list == NULL)
-    	return;
+		return;
 
 	index = (*list)->next;
 
 	for (; index != NULL; index = index->next)
 	{temp = index;
-		
+
 		for (; temp != NULL; temp = temp->prev)
 		{
-			node = temp; swich = index;
+			node = temp;
+            swich = index;
 
 			if (node->n > swich->n)
 			{
