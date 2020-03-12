@@ -20,9 +20,8 @@ void insertion_sort_list(listint_t **list)
 	{temp = index;
 
 		for (; temp != NULL; temp = temp->prev)
-		{
-			node = temp;
-			swich = index;
+		{node = temp;
+		swich = index;
 
 			if (node->n > swich->n)
 			{
