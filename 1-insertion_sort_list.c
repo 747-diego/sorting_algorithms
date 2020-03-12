@@ -7,18 +7,18 @@
 
 void insertion_sort_list(listint_t **list)
 {
-    listint_t *temp;
-    listint_t *node, *swich;
-    listint_t *index;
+	listint_t *temp;
+	listint_t *node, *swich;
+	listint_t *index;
 
 	if (list == NULL || *list == NULL) return;
 
 	index = (*list)->next;
 
-    for (; index != NULL; index = index->next)
+	for (; index != NULL; index = index->next)
 	{ temp = index;
 		
-        for (; temp != NULL; temp = temp->prev)
+		for (; temp != NULL; temp = temp->prev)
 		{
 			node = temp; swich = index;
 
