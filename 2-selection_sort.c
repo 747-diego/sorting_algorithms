@@ -13,7 +13,7 @@ void selection_sort(int *array, size_t size)
 	unsigned int index1 = 0;
 	unsigned int index2 = 0;
 
-	while (index1 < size -1)
+	while (index1 < size - 1)
 	{
 		numSmall = index1;
 		index2 = index1 + 1;
