@@ -22,7 +22,7 @@ void insertion_sort_list(listint_t **list)
 		for (; temp != NULL; temp = temp->prev)
 		{
 			node = temp;
-            swich = index;
+			swich = index;
 
 			if (node->n > swich->n)
 			{
@@ -31,9 +31,9 @@ void insertion_sort_list(listint_t **list)
 				if (node->prev != NULL)
 					node->prev->next = swich;
 				swich->prev = node->prev;
-                node->prev = swich;
-                node->next = swich->next;
-                swich->next = node;
+				node->prev = swich;
+				node->next = swich->next;
+				swich->next = node;
 				if (swich->prev == NULL)
 					*list = swich;
 				print_list(*list);
