@@ -11,12 +11,13 @@ void insertion_sort_list(listint_t **list)
 	listint_t *node, *swich;
 	listint_t *index;
 
-	if (list == NULL || *list == NULL) return;
+	if (list == NULL || *list == NULL)
+    	return;
 
 	index = (*list)->next;
 
 	for (; index != NULL; index = index->next)
-	{ temp = index;
+	{temp = index;
 		
 		for (; temp != NULL; temp = temp->prev)
 		{
@@ -28,7 +29,10 @@ void insertion_sort_list(listint_t **list)
 					swich->next->prev = node;
 				if (node->prev != NULL)
 					node->prev->next = swich;
-				swich->prev = node->prev; node->prev = swich; node->next = swich->next; swich->next = node;
+				swich->prev = node->prev;
+                node->prev = swich;
+                node->next = swich->next;
+                swich->next = node;
 				if (swich->prev == NULL)
 					*list = swich;
 				print_list(*list);
