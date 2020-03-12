@@ -15,7 +15,6 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	index = (*list)->next;
-
 	for (; index != NULL; index = index->next)
 	{temp = index;
 
