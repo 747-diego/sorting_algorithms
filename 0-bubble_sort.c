@@ -9,8 +9,8 @@
 void bubble_sort(int *array, size_t size)
 {
 	unsigned int index1 = 0;
-    unsigned int index2 = 0;
-    unsigned int swap = 0;
+	unsigned int index2 = 0;
+	unsigned int swap = 0;
 
 
 	if (array == NULL)
@@ -30,5 +30,5 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 	}
-    
+
 }
